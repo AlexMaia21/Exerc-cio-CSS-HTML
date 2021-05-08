@@ -1,0 +1,140 @@
+
+* {
+	margin:0;
+	padding:0;
+}
+
+/* Corpo total da página */
+body {
+	background-color:#f0f8ff;
+	font-family:Verdana;
+}
+
+/* Posicionamento da caixa 1 */
+#principal {
+	width:59.40%;
+	position:relative;
+	margin:100px auto;
+}
+
+/* Posicionamento das caixas 2 e 3 */
+#principal2 {
+	width:59.40%;
+	margin:100px auto;
+	margin-top:-99px;
+	position:relative;
+}
+
+#caixa1 {
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	padding:30px;
+	background:white;
+}
+
+/* Título da caixa 1 */
+.titulocx1 {
+	color:#00ced1;
+}
+
+.subtitulo {
+	color:#ccff33;
+	font-size:18px;
+	font-weight:900;
+	margin-top:20px;
+}
+
+.texto {
+	margin-top:20px;
+	color:#a9a9a9;
+	font-size:15px;
+	font-weight:900;
+}
+
+#caixa2 {
+	border-bottom-left-radius:10px;
+	width:50%;
+	height:245px;
+	background:#20b2aa;
+	font-size:20px;
+	float:left;
+}
+
+/* Formatação e posicionamento da caixa "Sign Up" */
+#caixa2 a {
+	background:#ccff33;
+	width:40%;
+	padding:10px;
+	font-size:15px;
+	font-weight:900;
+	text-align:center;
+	margin-top:16px;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:8px;
+	text-decoration:none;
+	display:block;
+	color:white;
+}
+
+/* Formatação da caixa "Sign Up" quando for passar o mouse por cima */
+#caixa2 a:hover {
+	width:50%;
+	color:#20b2aa;
+	text-decoration:none;
+	background:white;
+	font-size:16px;
+	margin-top:14px;
+}
+
+/* Textos da caixa 2 */
+.texto1 {
+	padding-top:30px;
+	padding-left:30px;
+	padding-bottom:20px;
+	color:white;
+}
+
+.texto2 {
+	color:white;
+	padding-left:30px;
+}
+
+.texto3 {
+	color:white;
+	padding-top:20px;
+	padding-left:30px;
+	padding-bottom:20px;
+	font-size:16px;
+}
+
+#caixa3 {
+	border-bottom-right-radius:10px;
+	width:50%;
+	background:#48d1cc;
+	float:right;
+}
+
+.titulocx3 {
+	color:white;
+	padding-top:30px;
+	padding-left:30px;
+	padding-bottom:20px;
+}
+
+.texto4 {
+	color:white;
+	font-size:13px;
+	padding-top:5px;
+	padding-left:30px;
+}
+
+.esp {
+	padding-bottom:6px;
+}
+
+.rodape {
+	clear:both;
+	text-align:center;
+	padding-top:90px;
+}
