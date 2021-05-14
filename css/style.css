@@ -15,6 +15,7 @@ body {
 	width:59.40%;
 	position:relative;
 	margin:100px auto;
+	min-width: 455px;
 }
 
 /* Posicionamento das caixas 2 e 3 */
@@ -23,6 +24,7 @@ body {
 	margin:100px auto;
 	margin-top:-99px;
 	position:relative;
+	min-width: 455px;
 }
 
 #caixa1 {
