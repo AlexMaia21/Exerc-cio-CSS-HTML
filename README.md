@@ -1,1 +1,1 @@
-Pequena página feita com o objetivo de praticar conhecimentos básicos em HTML e CSS.
+Pequena página feita com o objetivo de praticar conhecimentos básicos em HTML e Flexbox CSS.

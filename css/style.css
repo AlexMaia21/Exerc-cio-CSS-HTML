@@ -7,72 +7,71 @@
 /* Corpo total da página */
 body {
 	background-color:#f0f8ff;
-	font-family:Verdana;
+	font-family:Verdana, sans-serif;
 }
 
-/* Posicionamento da caixa 1 */
-#principal {
-	width:59.40%;
-	position:relative;
-	margin:100px auto;
-	min-width: 455px;
+ul {
+	list-style: none;
 }
 
-/* Posicionamento das caixas 2 e 3 */
-#principal2 {
-	width:59.40%;
-	margin:100px auto;
-	margin-top:-99px;
-	position:relative;
-	min-width: 455px;
+a {
+	text-decoration: none;
+}
+
+#container {
+	width: 65%;
+	margin: 90px auto 0 auto;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 #caixa1 {
-	border-top-left-radius:10px;
-	border-top-right-radius:10px;
-	padding:30px;
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 245px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding: 30px;
 	background:white;
 }
 
 /* Título da caixa 1 */
 .titulocx1 {
-	color:#00ced1;
+	color: #00ced1;
 }
 
 .subtitulo {
-	color:#ccff33;
-	font-size:18px;
-	font-weight:900;
+	color: #ccff33;
+	font-size:1.17em;
+	font-weight: 900;
 	margin-top:20px;
 }
 
 .texto {
 	margin-top:20px;
 	color:#a9a9a9;
-	font-size:15px;
+	font-size: 0.97em;
 	font-weight:900;
 }
 
 #caixa2 {
+	box-sizing: border-box;
 	border-bottom-left-radius:10px;
 	width:50%;
-	height:245px;
+	min-height:245px;
 	background:#20b2aa;
-	font-size:20px;
-	float:left;
+	padding: 30px;
 }
 
 /* Formatação e posicionamento da caixa "Sign Up" */
 #caixa2 a {
 	background:#ccff33;
-	width:40%;
-	padding:10px;
+	width:60%;
+	padding:11px 10px;
 	font-size:15px;
 	font-weight:900;
 	text-align:center;
-	margin-top:16px;
-	margin-left:auto;
-	margin-right:auto;
+	margin: 0 auto;
 	border-radius:8px;
 	text-decoration:none;
 	display:block;
@@ -81,62 +80,92 @@ body {
 
 /* Formatação da caixa "Sign Up" quando for passar o mouse por cima */
 #caixa2 a:hover {
-	width:50%;
 	color:#20b2aa;
-	text-decoration:none;
 	background:white;
-	font-size:16px;
-	margin-top:14px;
 }
 
 /* Textos da caixa 2 */
-.texto1 {
-	padding-top:30px;
-	padding-left:30px;
-	padding-bottom:20px;
+.titulocx2 {
+	margin-bottom: 20px;
 	color:white;
 }
 
 .texto2 {
+	margin-bottom: 20px;
 	color:white;
-	padding-left:30px;
 }
 
 .texto3 {
-	color:white;
-	padding-top:20px;
-	padding-left:30px;
-	padding-bottom:20px;
-	font-size:16px;
+	margin-bottom: 30px;
+	color: white;
+	font-size: 1em;
 }
 
 #caixa3 {
+	box-sizing: border-box;
 	border-bottom-right-radius:10px;
 	width:50%;
 	background:#48d1cc;
-	float:right;
+	padding: 30px;
 }
 
 .titulocx3 {
-	color:white;
-	padding-top:30px;
-	padding-left:30px;
-	padding-bottom:20px;
+	color: white;
+	margin-bottom: 15px;
 }
 
-.texto4 {
-	color:white;
-	font-size:13px;
-	padding-top:5px;
-	padding-left:30px;
+ul#links li {
+	margin-bottom: 5px;
 }
 
-.esp {
-	padding-bottom:6px;
+ul#links a {
+	color: #fff;
+	font-size: 0.95em;
+}
+
+ul#links a:hover {
+	text-decoration: underline;
 }
 
 .rodape {
-	clear:both;
 	text-align:center;
-	padding-top:90px;
+	margin: 40px 0;
+}
+
+/* Responsividade */
+
+@media (max-width: 576px) { /* Celulares de tela pequena e média */
+	#container {
+		display: block;
+		width: 90%;
+	}
+
+	#caixa2 {
+		width: 100%;
+		border-bottom-left-radius: 0;
+	}
+
+	#caixa3 {
+		width: 100%;
+		border-bottom-left-radius: 10px;
+	}
+}
+
+@media (max-width: 768px) { /* Celulares de tela grande e tablets */
+	#container {
+		display: block;
+		width: 90%;
+	}
+
+	#caixa2 {
+		width: 100%;
+		border-bottom-left-radius: 0;
+		text-align: center;
+	}
+
+	#caixa3 {
+		width: 100%;
+		border-bottom-left-radius: 10px;
+		text-align: center;
+	}
 }
